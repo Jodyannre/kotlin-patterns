@@ -1,4 +1,4 @@
-
+package creational
 /* Creational pattern factory */
 /* Centralize creation of objects that implement the same interface */
 
@@ -38,8 +38,8 @@ class Plane (override val model:String, override val brand:String): Vehicle {
 // Example of use
 
 /*
-    val vehicleFactory = FactoryVehicle()
+    val vehicleFactory = creational.FactoryVehicle()
     val carro = vehicleFactory.create(type="carro",brand="Toyota",model="Corolla")
-    val avion= FactoryVehicle().create(type="avion",brand="Toyota",model="Corolla")
+    val avion= creational.FactoryVehicle().create(type="avion",brand="Toyota",model="Corolla")
  */
 

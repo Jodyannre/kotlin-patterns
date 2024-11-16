@@ -1,4 +1,4 @@
-/* Creational pattern Singleton */
+package creational/* Creational pattern Singleton */
 /* Limit the instances of a class to one*/
 
 class SingleDB private constructor() {
@@ -21,14 +21,14 @@ class SingleDB private constructor() {
 /* Example of use */
 
 /*
-    val db = SingleDB.getInstance()
+    val db = creational.SingleDB.getInstance()
 
     db.addPlayer("Riquelme")
     db.addPlayer("Neymar")
 
-    val db2 = SingleDB.getInstance()
+    val db2 = creational.SingleDB.getInstance()
     db2.addPlayer("Messi")
     db2.addPlayer("Ronaldo")
-    val db3 = SingleDB.getInstance()
+    val db3 = creational.SingleDB.getInstance()
     println(db3.getPlayers())
  */

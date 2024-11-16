@@ -1,4 +1,4 @@
-/* Creational pattern prototype */
+package creational/* Creational pattern prototype */
 /* Copy objects that implement the same interface */
 
 interface Shape {
@@ -18,7 +18,7 @@ data class Square(private val side: Double): Shape {
 
 /* Example of use */
 /*
-    val circulo = Circle(15.2)
+    val circulo = creational.Circle(15.2)
     println(circulo.getRadius())
 
     val circulo2 = circulo.clone()

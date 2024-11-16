@@ -1,3 +1,5 @@
+package creational
+
 /* Creational pattern Builder */
 /* Creating an object in steps */
 class Pizza {
@@ -21,7 +23,7 @@ class Pizza {
 /* Example of use */
 
 /*
-    val pizza = Pizza.Builder()
+    val pizza = creational.Pizza.Builder()
     .size("Medium")
     .price(25.32)
     .bread("Integral")

@@ -1,4 +1,4 @@
-/* Creationl pattern FactoryAbsctract*/
+package creational/* Creationl pattern FactoryAbsctract*/
 
 /*
 provides an interface for creating families of related or dependent o
@@ -78,19 +78,19 @@ class ConcreteFactory: FactoryAbstract {
 /* Example of use */
 
 /*
-val woodFabric = WoodFactory()
+val woodFabric = creational.WoodFactory()
 
     val silla = woodFabric.createChair()
     val mesa = woodFabric.createTable()
     val puerta = woodFabric.createDoor()
 
-    val metalFabric = MetalFactory()
+    val metalFabric = creational.MetalFactory()
 
     val silla2 = metalFabric.createChair()
     val mesa2 = metalFabric.createTable()
     val puerta2 = metalFabric.createDoor()
 
-    val concreteFabric = ConcreteFactory()
+    val concreteFabric = creational.ConcreteFactory()
 
     val silla3 = concreteFabric.createChair()
     val mesa3 = concreteFabric.createTable()
