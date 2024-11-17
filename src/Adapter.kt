@@ -1,3 +1,7 @@
+/* Structural pattern - Adapter */
+/* Allows objects with incompatible interfaces to collaborate*/
+
+
 interface AdvancedMediaPlayer{
     fun playVlc(fileName: String)
     fun playMp4(fileName: String)
