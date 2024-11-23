@@ -1,4 +1,4 @@
-/* Structural pattern Decorator */
+package structural/* Structural pattern Decorator */
 /*
 Is a structural design pattern that lets you attach new behaviors to objects
 by placing these objects inside special wrapper objects that contain the behaviors
@@ -32,25 +32,25 @@ class HeavyArmor(enemy:Enemy): EnemyDecorator(enemy) {
 }
 
 class Sword(enemy:Enemy): EnemyDecorator(enemy) {
-    override fun attack() = "${super.attack()} (It has a Sword)"
+    override fun attack() = "${super.attack()} (It has a structural.Sword)"
 }
 
 class Bow(enemy:Enemy): EnemyDecorator(enemy) {
-    override fun attack() = "${super.attack()} (It has a Bow)"
+    override fun attack() = "${super.attack()} (It has a structural.Bow)"
 }
 
 
 /* Example of use
-    var enemy: Enemy = BasicEnemy()
-    enemy = LightArmor(enemy)
-    enemy = Sword(enemy)
-    enemy = Bow(enemy)
+    var enemy: structural.Enemy = structural.BasicEnemy()
+    enemy = structural.LightArmor(enemy)
+    enemy = structural.Sword(enemy)
+    enemy = structural.Bow(enemy)
 
     println(enemy.attack())
     println(enemy.defense())
 
-    var heavyEnemy = Sword(HeavyArmor(BasicEnemy()))
-    var lightEnemy = Bow(LightArmor(BasicEnemy()))
+    var heavyEnemy = structural.Sword(structural.HeavyArmor(structural.BasicEnemy()))
+    var lightEnemy = structural.Bow(structural.LightArmor(structural.BasicEnemy()))
     println("---------------------------------------------------------")
     println("Heavy enemy")
     println(heavyEnemy.attack())

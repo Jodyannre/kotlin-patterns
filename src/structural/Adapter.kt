@@ -1,4 +1,4 @@
-/* Structural pattern - Adapter */
+package structural/* Structural pattern - Adapter */
 /* Allows objects with incompatible interfaces to collaborate*/
 
 
@@ -46,7 +46,7 @@ class MediaAdapter(audioType: String) : MediaPlayer{
 
 /* Original
 
-class AudioPlayer : MediaPlayer{
+class structural.AudioPlayer : structural.MediaPlayer{
     override fun play(audioType: String, fileName: String) {
         if (audioType == "mp3") println("Playing $fileName")
         else println("Format not supported")
@@ -70,7 +70,7 @@ class AudioPlayer: MediaPlayer{
 
 
 /* Example of use
-    val reproductor = AudioPlayer()
+    val reproductor = structural.AudioPlayer()
     reproductor.play("mp4","It's my life")
 
  */

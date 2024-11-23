@@ -1,4 +1,4 @@
-/* Structural pattern Flyweight
+package structural/* Structural pattern Flyweight
 is a structural design pattern that lets you fit more objects into the available amount
 of RAM by sharing common parts of state between multiple objects instead of keeping all of
 the data in each object.
@@ -67,7 +67,7 @@ fun main() {
         val numTreesToDraw = 1000
         val numTreeTypes = 4
 
-        val forest = Forest();
+        val forest = structural.Forest();
         for (i in 0..numTreesToDraw/numTreeTypes) {
                 forest.plantTree(random(0, canvasSize), random(0, canvasSize), "Summer Oak", Color.GREEN)
                 forest.plantTree(random(0, canvasSize), random(0, canvasSize), "Autumn Oak", Color.ORANGE)

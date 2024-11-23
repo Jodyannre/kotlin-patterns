@@ -1,4 +1,4 @@
-/* Structural proxy pattern
+package structural/* Structural proxy pattern
 is a structural design pattern that lets you provide a substitute or placeholder
 for another object. A proxy controls access to the original object,
 allowing you to perform something either before or after the request gets
@@ -107,7 +107,7 @@ class ProxyCartRepo(
 
 /* Example of use
 fun main() {
-    val proxy = ProxyCartRepo(ClientType.GUEST.name,NetworkService(),DatabaseClass())
+    val proxy = structural.ProxyCartRepo(structural.ClientType.GUEST.name,structural.NetworkService(),structural.DatabaseClass())
 
     println(proxy.repo)
 

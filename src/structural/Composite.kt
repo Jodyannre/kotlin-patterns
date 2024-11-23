@@ -1,4 +1,4 @@
-/* Structural pattern Composite */
+package structural/* Structural pattern Composite */
 
 interface MovieComponent {
     fun play(): String
@@ -45,15 +45,15 @@ class Playlist(private val name: String) : MovieComponent {
 /* Example of use */
 
 /*
-val actionMoviesPlayList = Playlist("Action Movies")
-    actionMoviesPlayList.add(Movie("The Matrix"))
-    actionMoviesPlayList.add(Movie("Die Hard"))
+val actionMoviesPlayList = structural.Playlist("Action Movies")
+    actionMoviesPlayList.add(structural.Movie("The Matrix"))
+    actionMoviesPlayList.add(structural.Movie("Die Hard"))
 
-    val comicMoviesPlayList = Playlist("Comic Movies")
-    comicMoviesPlayList.add(Movie("The Hangover"))
-    comicMoviesPlayList.add(Movie("Bridesmaids"))
+    val comicMoviesPlayList = structural.Playlist("Comic Movies")
+    comicMoviesPlayList.add(structural.Movie("The Hangover"))
+    comicMoviesPlayList.add(structural.Movie("Bridesmaids"))
 
-    val allPlaylists = Playlist("All Playlists")
+    val allPlaylists = structural.Playlist("All Playlists")
     allPlaylists.add(actionMoviesPlayList)
     allPlaylists.add(comicMoviesPlayList)
 

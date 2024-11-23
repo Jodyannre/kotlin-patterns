@@ -1,4 +1,4 @@
-/* Structural pattern Facade
+package structural/* Structural pattern Facade
 is a structural design pattern that provides a simplified interface to a library,
 a framework, or any other complex set of classes.
  */
@@ -40,7 +40,7 @@ class VideoConverterFacade {
 
 /* Example of use
 fun main() {
-    val videoConverter = VideoConverterFacade()
+    val videoConverter = structural.VideoConverterFacade()
     videoConverter.convertVideo("users/videos","desktop/videos","mp4")
 }
  */
