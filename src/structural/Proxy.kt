@@ -107,7 +107,7 @@ class ProxyCartRepo(
 
 /* Example of use
 fun main() {
-    val proxy = structural.ProxyCartRepo(structural.ClientType.GUEST.name,structural.NetworkService(),structural.DatabaseClass())
+    val proxy = ProxyCartRepo(ClientType.GUEST.name,NetworkService(),DatabaseClass())
 
     println(proxy.repo)
 

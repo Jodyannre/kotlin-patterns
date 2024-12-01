@@ -40,7 +40,7 @@ class VideoConverterFacade {
 
 /* Example of use
 fun main() {
-    val videoConverter = structural.VideoConverterFacade()
+    val videoConverter = VideoConverterFacade()
     videoConverter.convertVideo("users/videos","desktop/videos","mp4")
 }
  */

@@ -34,11 +34,11 @@ class Plastic: Material{
 
 /* Example of use*/
 /*
-    val woodTable:structural.Furniture = structural.Table(structural.Wood())
+    val woodTable:Furniture = Table(Wood() )
     woodTable.build()
-    val metalTable:structural.Furniture = structural.Table(structural.Metal())
+    val metalTable:Furniture = Table(Metal())
     metalTable.build()
-    val plasticTable:structural.Furniture = structural.Table(structural.Plastic())
+    val plasticTable:Furniture = Table(Plastic())
     plasticTable.build()
  */
 

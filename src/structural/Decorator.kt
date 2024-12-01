@@ -41,16 +41,16 @@ class Bow(enemy:Enemy): EnemyDecorator(enemy) {
 
 
 /* Example of use
-    var enemy: structural.Enemy = structural.BasicEnemy()
-    enemy = structural.LightArmor(enemy)
-    enemy = structural.Sword(enemy)
-    enemy = structural.Bow(enemy)
+    var enemy: Enemy = BasicEnemy()
+    enemy = LightArmor(enemy)
+    enemy = Sword(enemy)
+    enemy = Bow(enemy)
 
     println(enemy.attack())
     println(enemy.defense())
 
-    var heavyEnemy = structural.Sword(structural.HeavyArmor(structural.BasicEnemy()))
-    var lightEnemy = structural.Bow(structural.LightArmor(structural.BasicEnemy()))
+    var heavyEnemy = Sword(HeavyArmor(BasicEnemy()))
+    var lightEnemy = Bow(LightArmor(BasicEnemy()))
     println("---------------------------------------------------------")
     println("Heavy enemy")
     println(heavyEnemy.attack())
