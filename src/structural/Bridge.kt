@@ -42,3 +42,79 @@ class Plastic: Material{
     plasticTable.build()
  */
 
+
+
+/* Other Example */
+
+interface Device {
+    fun turnOn()
+    fun turnOff()
+    fun setVolumen(volume: Int)
+}
+
+class Tv: Device {
+    override fun turnOff() {
+        println("Turning off")
+    }
+    override fun setVolumen(volume: Int) {
+        println("Set volume $volume")
+    }
+    override fun turnOn() {
+        println("Turning on")
+    }
+}
+
+class Radio: Device{
+    override fun turnOff() {
+        println("Turning off")
+    }
+    override fun setVolumen(volume: Int) {
+        println("Set volume $volume")
+    }
+    override fun turnOn() {
+        println("Turning on")
+    }
+}
+
+open class RemoteControl(protected var device: Device) {
+    open fun turnOn() {
+        println("Remote: Turning on the device.")
+        device.turnOn()
+    }
+
+    open fun turnOff() {
+        println("Remote: Turning off the device.")
+        device.turnOff()
+    }
+
+    open fun setVolume(volume: Int) {
+        println("Remote: Setting volume to $volume.")
+        device.setVolumen(volume)
+    }
+}
+
+
+class AdvancedRemoteControl(device: Device) : RemoteControl(device) {
+    fun mute() {
+        println("AdvancedRemote: Muting the device.")
+        device.setVolumen(0)
+    }
+}
+
+
+/* Example of use
+fun main() {
+
+    val radio = Radio()
+    val tv = Tv()
+
+    val tvControl = RemoteControl(tv)
+
+    tvControl.turnOn()
+    tvControl.turnOff()
+    tvControl.setVolume(15)
+
+    val advanceRadioControl = AdvancedRemoteControl(radio)
+    advanceRadioControl.mute()
+}
+ */
